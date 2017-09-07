@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="SplitAppData.controller.Detail">
+	<App>
+		<pages>
+			<Page title="Detail" navButtonPress="handleNavButtonPress">
+			<content>
+			    <ObjectHeader title="{ProductName}" number="{=((${UnitPrice}*100)/100).toFixed(2)}" numberUnit="eur" introActive="true" titleActive="true" id="__header0">
+			        <attributes>
+			            <ObjectAttribute text="{QuantityPerUnit}" id="__attribute9"/>
+			        </attributes>
+			    <statuses>
+			        <ObjectStatus text="{=${Discontinued} ? 'Discontinued' : 'Available'}" id="__status9" state="{=${Discontinued} ? 'Error' : 'Success'}"/>
+			    </statuses>
+			    </ObjectHeader>
+			</content>
+			<footer>
+			    <Bar class="sapContrast sapContrastPlus" id="__bar0">
+			        <contentRight>
+			            <Button text="Order" width="100px" id="__button0" activeIcon="sap-icon://accept" icon="sap-icon://accept" press="handleOrderPress"/>
+			        </contentRight>
+			    </Bar>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

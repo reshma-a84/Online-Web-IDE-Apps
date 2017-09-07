@@ -1,0 +1,47 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+ 
+    <Dialog title = "INFORMATION" id="idDialog">
+    <l:Grid defaultSpan = "L12 M12 S12" width = "auto" id = "idGrid">
+    <l:content>
+        <f:SimpleForm id="SimpleFormDisplay354"
+            minWidth="1024"
+            maxContainerCols="2"
+            editable="false"
+            layout="ResponsiveGridLayout"
+            title="Address"
+            labelSpanL="3"
+            labelSpanM="3"
+            emptySpanL="4"
+            emptySpanM="4"
+            columnsL="2"
+            columnsM="2">
+            <f:content>
+                <Label text="Bank Key" />      <Input id = "bankKey"/>
+                <Label text="Bank Name" />     <Input id = "bankName"/>
+                <Label text="Street" />		   <Input id = "street"/>
+                <Label text="City" />
+                <Input id = "city"/>
+                <Label text="State" />
+                <Input id = "state"/>
+                <Label text="Country" />
+                <Input id = "country"/>
+                <Label text="Bank Number" />
+                <Input id = "bankNumber"/>
+                <Label text="Branch" />
+                <Input id = "branch"/>
+                <Label text="Routing Number" />
+                <Input id = "routingNumber"/>
+            </f:content>
+        </f:SimpleForm>
+    </l:content>
+    </l:Grid>
+    <buttons>
+    <Button text = "CLOSE" press = "onClose" type = "Reject"/>
+    <Button text = "SAVE" press = "onAdd" type = "Accept"/>
+    </buttons>
+    </Dialog>
+</core:FragmentDefinition>

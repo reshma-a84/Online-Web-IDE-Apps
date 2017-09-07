@@ -1,0 +1,35 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="BankCRUD_App.controller.Master">
+	<App>
+		<pages>
+			<Page title="Bank App CRUD Operation">
+				<content>
+					
+		
+				    <List items="{/Banks}" id="__list0">
+				    	<headerToolbar>
+				    	<Toolbar>
+				    		<Title text="Bank List"/>
+				    			<ToolbarSpacer/>
+				    		<Button icon="sap-icon://add" press="openDialog"/>
+				    	</Toolbar>
+				    </headerToolbar>
+				            <StandardListItem type="Navigation" title="{BankKey}" description="{BankName}" icon="sap-icon://picture" id="listID" press="handleListItemPress"/>
+				    </List>
+				</content>
+			<footer>
+			    <Bar class="sapContrast sapContrastPlus" id="__bar0">
+			        <contentMiddle>
+			            <Button text="Delete" width="100px" id="deleteButton" enabled="false"/>
+			        </contentMiddle>
+			    <contentRight>
+			        <Button text="Cancel" width="100px" id="__button2" press="onCancel"/>
+			    </contentRight>
+			    <contentLeft>
+			        <Button text="Update" width="100px" id="updateButton" press="onUpdate" enabled="false"/>
+			    </contentLeft>
+			    </Bar>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
