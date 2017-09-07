@@ -1,0 +1,13 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ProductListProductList.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <List items="{/Products}" id="__list0">
+				            <StandardListItem type="Active" title="{ProductName}" icon="sap-icon://picture" press="handleListItemPress"/>
+				    </List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

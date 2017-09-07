@@ -1,0 +1,61 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.offline.pdbOffline_PDB.controller.OfflinePage" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showFooter="false">
+				<content>
+					<SegmentedButton select="handleSegmentedButton" selectedButton="__button5" id="__button4" width="100%">
+						<buttons>
+							<Button text="Create Records" id="__button5"/>
+							<Button text="Show DB" id="__button6"/></buttons>
+					</SegmentedButton>
+					<VBox width="100%" direction="Column" id="__vbox0">
+						<items>
+							<Label text="Material id (Key)" width="100%" id="__label0"/>
+							<Input width="100%" id="__input0"/>
+							<Label text="Material desc" width="100%" id="__label1"/>
+							<Input width="100%" id="__input1"/>
+							<Label text="Comments" width="100%" id="__label3"/>
+							<Input width="100%" id="__input2"/>
+							<Button text="Create Offline data" press="handleDataStoreOffline" width="100%" id="__button0" type="Reject"/>
+							<Button text="Update Offline data" press="handleUpdateOfflineData" width="100%" id="__button2" type="Emphasized"/>
+							<Button text="Delete Key Offline data" press="handleDestroyData" width="100%" id="__button3" type="Accept"/>
+							<Button text="Delete All data" press="handleDestroyAllRec" width="100%" id="__button3_A"/>
+						</items>
+					</VBox>
+					<VBox width="100%" visible="false" direction="Column" id="__vbox1">
+						<items>
+							<Table id="__list0" inset="false" items="{ path: 'OfflineData>/' }">
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Offline DB" level="H2"/>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column>
+										<Text text="Material number"/>
+									</Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
+										<Text text="Material desc"/>
+									</Column>
+									<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+										<Text text="Comment"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<ObjectIdentifier title="{OfflineData>doc/records/0/matnum}" text=""/>
+											<Text text="{OfflineData>doc/records/0/matnumDesc}"/>
+											<Text text="{OfflineData>doc/records/0/matnumComment}"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</items>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
