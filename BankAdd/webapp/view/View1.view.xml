@@ -1,0 +1,77 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="BankAdd.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="bankAdd">
+				        <sap.ui.layout.form:formContainers><sap.ui.layout.form:FormContainer title="Title" id="__container1">
+				                <sap.ui.layout.form:formElements>
+				                    <sap.ui.layout.form:FormElement label="Bank Key" id="__element3">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="bankKey"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Bank Name" id="__element4">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="bankName"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Street" id="__element6">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="street"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="City" id="__element7">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="city"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="State" id="__element8">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="state"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Country" id="__element9">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="country"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Bank Number" id="__element10">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="bankNumber"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Branch" id="__element0">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="branch"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Routing Number" id="__element1">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="routingNumber"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                </sap.ui.layout.form:formElements>
+				            </sap.ui.layout.form:FormContainer>
+				        </sap.ui.layout.form:formContainers>
+				        <sap.ui.layout.form:layout>
+				            <sap.ui.layout.form:ResponsiveGridLayout id="__layout0"/>
+				        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+				</content>
+			<footer>
+			    <Bar class="sapContrast sapContrastPlus" id="__bar0">
+			        <contentRight>
+			        <Button text="Delete" width="100px" id="delete" press="onDelete"/>
+			        </contentRight>
+			    <contentMiddle>
+			    <Button text="Update" width="100px" id="update" press="onUpdate"/>
+			    </contentMiddle>
+			    <contentLeft>
+			        <Button text="Add" width="100px" id="add" press="onAdd"/>
+			    </contentLeft>
+			    </Bar>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

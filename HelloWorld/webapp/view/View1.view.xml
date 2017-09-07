@@ -1,0 +1,11 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="HelloWorldHelloWorld.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{hellodata>/title}">
+				<content>
+				    <Label text="{hellodata>/text}" width="100%" id="__label0"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

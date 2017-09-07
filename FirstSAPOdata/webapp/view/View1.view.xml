@@ -1,0 +1,22 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="FirstSAPOdata.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+			<content>
+			    <Bar id="__bar0">
+			        <contentLeft>
+			            <SearchField width="100%" placeholder="Search" id="__field0"/>
+			        </contentLeft>
+			    <contentRight>
+			        <Button text="+" width="100px" id="__button0"/>
+			    </contentRight>
+			    </Bar>
+			    <List items="{/Banks}" id="__list0">
+			        <items>
+			            <StandardListItem type="Active" title="{BankKey}" description="{BankName}" icon="sap-icon://picture"/></items>
+			    </List>
+			</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

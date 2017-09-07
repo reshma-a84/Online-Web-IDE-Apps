@@ -1,0 +1,12 @@
+<mvc:View controllerName="FirstUI5.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{companydata>/name}">
+				<content>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
